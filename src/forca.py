@@ -4,8 +4,6 @@ enforcado = False
 acertou = False
 numero_tentativas = 0
 
-
-
 with open("palavras.txt", "r") as arquivo:
     palavras = []
     for linha in arquivo:
