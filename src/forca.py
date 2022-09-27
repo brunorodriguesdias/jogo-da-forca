@@ -16,7 +16,6 @@ print("Cada acerto, aparecerá como dica, você pode errar 5 vezes antes de ser 
 print("*** Boa sorte! ***\n")
 
 print(acertos)
-print(palavra_secreta)
 
 while(not enforcado and not acertou):
     tentativa = input("Digite uma letra: ")
