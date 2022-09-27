@@ -16,5 +16,5 @@ Neste projeto, estou criando um arquivo com funções separadas para organizar o
 <h2>Como visualizar o projeto</h2>
 Abra o arquivo forca.py
 Utilizei o pycharm para fazer e rodar o projeto,
-Você pode encontra o programa neste <a href="https://www.jetbrains.com/pt-br/pycharm/download/#section=windows">link</>.
+Você pode encontra o programa neste <a href="https://www.jetbrains.com/pt-br/pycharm/download/#section=windows">link</a>.
 Caso já possua outro interpretador python instalado pode utilizar também ou pode rodar no terminal python também.
