@@ -10,6 +10,16 @@ def gera_palavra_secreta():
     numero = random.randrange(0, len(palavras))
     palavra_secreta = palavras[numero].upper()
     return palavra_secreta
+def gera_palavra_secreta_dificil():
+    with open("palavras_dificeis.txt", "r") as arquivo:
+        palavras = []
+        for linha in arquivo:
+            linha = linha.strip()
+            palavras.append(linha)
+
+    numero = random.randrange(0, len(palavras))
+    palavra_secreta = palavras[numero].upper()
+    return palavra_secreta
 def consulta_acerto(palavra_secreta, tentativa, acertos):
     i = 0
     for letra in palavra_secreta:

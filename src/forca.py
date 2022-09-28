@@ -1,22 +1,31 @@
 import random
 from funcoes import *
 
-enforcado = False
-acertou = False
-numero_tentativas = 0
-
-palavra_secreta = gera_palavra_secreta()
-
-acertos = ["_" for letra in palavra_secreta]
-
 print("***** Bem vindo ao jogo da forca! *****")
 print("\n*** Tututorial: ***")
 print("O Jogo irá gerar uma palavra secreta, você irá digitar as letras para tentar adivinhar a palavra")
-print("Cada acerto, aparecerá como dica, você pode errar 5 vezes antes de ser enforcado!")
+print("Cada acerto aparecerá como dica, você pode errar 5 vezes antes de ser enforcado!")
 print("*** Boa sorte! ***\n")
 
-print(acertos)
+print("Escolha a dificuldade que deseja")
+print("(1)- Fácil ou (2)- Difícil (palavras mais longas)")
+dificuldade = int(input("Escolha a opção desejada: "))
 
+enforcado = False
+acertou = False
+numero_tentativas = 0
+if (dificuldade == 1):
+    palavra_secreta = gera_palavra_secreta()
+elif(dificuldade == 2):
+    palavra_secreta = gera_palavra_secreta_dificil()
+else:
+    while (dificuldade < 1 or dificuldade > 2):
+        print("Opção inválida, tente novamente!")
+        dificuldade = int(input("Escolha a opção desejada: "))
+acertos = ["_" for letra in palavra_secreta]
+
+print(acertos)
+print(palavra_secreta)
 while(not enforcado and not acertou):
     tentativa = input("Digite uma letra: ")
     tentativa = tentativa.strip().upper()
