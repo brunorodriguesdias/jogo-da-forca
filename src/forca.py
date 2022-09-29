@@ -47,7 +47,7 @@ while (jogar_novamente == 1):
         print("Parabéns, você acertou, a palavra secreta era {}".format(palavra_secreta))
     else:
         print("Você não acertou a palavra secreta!")
-        print("A palavra secreta era {]".format(palavra_secreta))
+        print("A palavra secreta era {}".format(palavra_secreta))
 
     print("\nDeseja jogar novamente?")
     print("Digite (1)-Sim   (2)-Não ")
