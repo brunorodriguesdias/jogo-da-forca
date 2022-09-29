@@ -70,3 +70,5 @@ def impressao_forca(numero_tentativas):
     print(" |            ")
     print("_|___         ")
     print()
+    print("***       DICA       ***")
+    print("A palavra está em uma dessas categorias: animais, frutas ou legumes, países\n")
