@@ -9,7 +9,7 @@ print("*** Boa sorte! ***\n")
 
 jogar_novamente = 1
 while (jogar_novamente == 1):
-    print("Escolha a dificuldade que deseja")
+    print("\nEscolha a dificuldade que deseja")
     print("(1)- Fácil ou (2)- Difícil (palavras mais longas)")
     dificuldade = int(input("Escolha a opção desejada: "))
 
@@ -26,7 +26,7 @@ while (jogar_novamente == 1):
             print("Opção inválida, tente novamente!")
             dificuldade = int(input("Escolha a opção desejada: "))
     acertos = ["_" for letra in palavra_secreta]
-
+    print("\n")
     print(acertos)
 
     while(not enforcado and not acertou):
